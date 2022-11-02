@@ -22,9 +22,9 @@ function Section() {
         delay: 5000,
       }}
     >
-      {[1, 2, 3, 4].map(() => {
+      {[1, 2, 3, 4].map((_, index) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <section className="py-3 sm:py-6 md:py-9">
               <div className="container mx-auto px-2  md:px-10">
                 <h1 className="text-4xl text-center font-bold mb-6">
